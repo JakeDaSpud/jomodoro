@@ -8,15 +8,24 @@
     <script src="scripts.js"></script>
 </head>
 <body>
-    <h1>⏱️jomodoro🙇‍♀️</h1>
+    <header>
+        <h1 class="jomo">⏱️jomo</h1><h1 class="doro">doro🙇‍♀️</h1>
+    </header>
 
-    <div id="timers">
-        <div id="workTimeDisplay" class="workTimeDisplay">25:00</div>
-        <div id="breakTimeDisplay" class="breakTimeDisplay">5:00</div>
+    <div id="timers" class="timers">
+        <h1 id="workTimeDisplay" class="activeTimer">00:10</h1>
+        <h1 id="breakTimeDisplay" class="inactiveTimer">5:00</h1>
+    </div>
+
+    <div id="timeFields" class="timeFields">
+        <div style="display: flex; flex-direction: row;">
+            <h2>Work Length:&nbsp;</h2><h2>25:00</h2><h2>&nbsp;</h2>
+            <button>min+</button><button>min-</button><button>sec+</button><button>sec-</button>
+        </div>
     </div>
 
     <div id="buttons">
-        <input type="button" id="startButton" class="inactiveButton" value="Start">
+        <input type="button" id="startButton" class="inactiveButton" value="Start" onclick="startWorkTimer()">
         <input type="button" id="stopButton" class="activeButton" value="Stop">
     </div>
 

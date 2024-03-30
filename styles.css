@@ -1,10 +1,53 @@
 body {
+    font-family: monospace;
+    background-color: aquamarine;
+    color:blueviolet;
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
     width: 100%;
     height: 100%;
+}
+
+header {
+    display: inline-flex;
+}
+
+.jomo {
+    color:darkslateblue;
+}
+
+.doro {
+    color: blueviolet;
+}
+
+.timers {
+    display: flex;
+    flex-direction: row;
+
+    margin: 3px;
+}
+
+.activeTimer, .inactiveTimer {
+    padding: 2px;
+
+    width: 15%, 350px, 25%;
+    text-align: center;
+    align-content: center;
+    resize: none;
+}
+
+.activeTimer {
+    color: rgb(255, 235, 247);
+    background-color: rgb(255, 45, 171);
+}
+
+.inactiveTimer {
+    color: darkgrey;
+    background-color: darkslategrey;
 }
 
 footer {
